@@ -1,0 +1,14 @@
+.Item-Wrapper {
+    width: calc(100% / 3);;
+    display: inline-block;
+}
+
+.Item-Block {
+    background-color: #abcdef;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 180px;
+    color: initial;
+}

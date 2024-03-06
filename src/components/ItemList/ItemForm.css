@@ -1,0 +1,49 @@
+.ItemForm {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.ItemForm-InputBlock {
+    flex: 3;
+}
+
+.ItemForm-InputBlock label {
+    width: 150px;
+}
+
+.ItemForm-NameInput {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ItemForm-DescInput {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ItemForm-ButtonBlock {
+    flex: 1;
+    display: flex;
+}
+
+.ItemForm-ButtonBlock button {
+    flex: 1;
+    margin: 8px;
+    background: #456789;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.ItemForm-ButtonBlock button:active {
+    background: #ddeeff;
+    transition: none;
+}
+
+.ItemForm-ButtonBlock button:hover {
+    background: #345678;
+}
