@@ -2,11 +2,11 @@ import { ItemProp } from "./Item";
 import "./ItemForm.css";
 
 type ItemFormProp = {
-    onAdd: ( arg0: ItemProp) => void
+    onAdd: ( arg0: ItemProp ) => void
 }
 
 const ItemForm = ({ onAdd }: ItemFormProp) => {
-    
+
     const triggerOnAdd = () => {
         const nameValue = document.getElementById("nameValue") as HTMLInputElement;
         const descValue = document.getElementById("descValue") as HTMLInputElement;
