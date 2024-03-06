@@ -5,10 +5,18 @@
 
 .ItemForm-InputBlock {
     flex: 3;
+    text-align: left;
 }
 
 .ItemForm-InputBlock label {
-    width: 150px;
+    width: 200px;
+}
+
+.ItemForm-InputBlock input {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    height: 24px;
 }
 
 .ItemForm-NameInput {
@@ -30,7 +38,7 @@
 
 .ItemForm-ButtonBlock button {
     flex: 1;
-    margin: 8px;
+    margin: 2px 8px;
     background: #456789;
     color: white;
     font-weight: 700;
