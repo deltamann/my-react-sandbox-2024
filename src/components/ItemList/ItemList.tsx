@@ -12,15 +12,16 @@ const ItemList = ({ initItems }: ItemListProp) => {
 
     function addItem(item: ItemProp) {
         setItems([item, ...items]);
-        console.log([item, ...items]);
+        // console.log([item, ...items]);
     }
+
     return (
         <div className="ItemList-Wrapper">
             <h2>Item List</h2>
             <ItemForm onAdd={addItem} />
             <div className="ItemList-Block">
                 {items.map((item, i) => {
-                    console.log(item.name, item);
+                    // console.log(item.name, item);
                     return (
                         <Item key={i} name={item.name} description={item.description} />
                     );
