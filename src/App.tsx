@@ -7,14 +7,22 @@ import Demo from './routes/Demo';
 
 function App() {
   return (
-    <div className="App App-Content">
+    <div className="App">
       <Router>
-        <NavBar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/demo' element={<Demo />} />
-        </Routes>
+        <div className='App-Header'>
+          <header>
+            <NavBar />
+          </header>
+        </div>
+        <div className='App-Content'>
+          <section>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/demo' element={<Demo />} />
+            </Routes>
+          </section>
+        </div>
       </Router>
     </div>
   );

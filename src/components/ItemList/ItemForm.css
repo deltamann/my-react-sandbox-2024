@@ -19,16 +19,11 @@
     height: 24px;
 }
 
-.ItemForm-NameInput {
+.ItemForm-NameInput, .ItemForm-DescInput {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-
-.ItemForm-DescInput {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    padding: 4px;
 }
 
 .ItemForm-ButtonBlock {
