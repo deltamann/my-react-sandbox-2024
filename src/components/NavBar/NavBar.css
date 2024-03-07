@@ -1,6 +1,23 @@
 .MainNavBar {
     background: #242424;
     border-bottom: 1px solid #aaa;
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.3s ease;
+    display: flex;
+}
+
+.MainNavBar-MenuWrapper {
+    overflow: hidden;
+}
+
+.MainNavBar.isFixed {
+    position: fixed;
+    max-height: 0;
+}
+
+.MainNavBar.isExpanded {
+    max-height: 25vh;
 }
 
 .MainNavBar nav {
@@ -27,4 +44,22 @@
 .MainNavBar li a:active {
     color: white;
     text-decoration: none;
+}
+
+.MainNavBar-ToggleButton {
+    display: none;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 24px;
+    padding: 0 12px;
+}
+
+@media only screen and ( max-width: 720px ) {
+    .MainNavBar-ToggleButton {
+        display: block;
+    }
+    .MainNavBar-MenuWrapper {
+        max-width: 0;
+    }
 }
