@@ -2,14 +2,7 @@ import ContentBlock, { ContentProp } from "../components/common/ContentBlock"
 
 type Props = {}
 
-const content: ContentProp = {
-    level: 1,
-    title: "Personal Summary",
-    description: [`I have a background in software engineering and specialize in website and online application development, with more than 8 years of working experience. Currently, I am looking for roles that can help me gain more skills and experience in variousindustries, as well as improve my knowledge in the Information Technology sector.`
-    ,`I am a good listener and communicator, organized, and has proven experience in maintaining and managing business websitesand large web applications. I pay attention to small details, which aids in finding issues and solving problems. I am also open-minded to recommendations and feedback, always willing to learn and improve myself in both personal and professional aspects.`]
-}
-
-const SkillList: ContentProp[] = [
+const KeySkillList: ContentProp[] = [
     { 
         level: 2,
         title: "Motivated:",
@@ -48,15 +41,45 @@ const SkillList: ContentProp[] = [
     },
 ]
 
-const Home = (props: Props) => {
-    return (
-        <div className="HomePage">
-            <div className="HomePage-Summary">
-                <h1>Vincent Yu</h1>
-                <ContentBlock content={content} />
+const TechSkillList: ContentProp[] = [
+    { 
+        level: 3,
+        title: "Frontend",
+        description: ['HTML5, Javascript(ES6)/Typescript, CSS, LESS, SASS, MVC, jQuery, AngularJS, Angular + NgRx, React'],
+    },
+    { 
+        level: 3,
+        title: "Backend",
+        description: ['PHP, C#, .NET Framework / .NET Core, Python'],
+    },
+    { 
+        level: 3,
+        title: "Data Layer",
+        description: ['SQL, MySQL'],
+    },
+    { 
+        level: 3,
+        title: "Others",
+        description: ['Wordpress, Joomla!, Drupal, Stencil.js, Node.js, Git, Microsoft Azure and Power Platform, Business Central AL'],
+    },
+]
+
+const Skills = () => {
+  return (
+    <div className="SkillsPage">
+        <h1>Key Skills</h1>
+        <div className="SkillsPage-Key">
+            {KeySkillList.map(s => (<ContentBlock content={s} />))}
+        </div>
+        <div className="SkillsPage-Tech">
+            <h2>Technical Skiils</h2>
+            <p>8+ experience in the IT sector, and always learning new technologies fast, including</p>
+            <div className="SkillsPage-TechList">
+            {TechSkillList.map(s => (<ContentBlock content={s} />))}
             </div>
         </div>
-    )
+    </div>
+  )
 }
 
-export default Home
+export default Skills

@@ -5,6 +5,7 @@ import About from './routes/About';
 import Home from './routes/Home';
 import Demo from './routes/Demo';
 import ScrollToTop from './components/common/ScrollToTop';
+import Skills from './routes/Skills';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             <main>
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/about' element={<About />} />
+              <Route path='/skills' element={<Skills />} />
               <Route path='/demo' element={<Demo />} />
             </Routes>
             </main>
