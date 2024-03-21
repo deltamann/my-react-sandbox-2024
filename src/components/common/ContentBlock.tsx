@@ -1,7 +1,7 @@
 export type ContentProp = {
     title: string,
     level: 1 | 2 | 3
-    description?: string[],
+    description?: string[] | JSX.Element[],
     list?: string[],
 };
 
