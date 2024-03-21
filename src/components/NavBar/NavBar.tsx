@@ -12,12 +12,13 @@ const NavBar = () => {
             let scrollTop = window.scrollY || document.documentElement.scrollTop;
             if (document.documentElement.scrollTop < navbar.offsetHeight) {
                 // Scrolling down
-                navbar.classList.remove('isFixed', 'isExpanded');
+                navbar.classList.remove('isFixed');
             } else if (scrollTop > lastScrollTop) {
-                navbar.classList.remove('isExpanded');
+                // navbar.classList.remove('isExpanded');
+                navbar.classList.add('isFixed');
             } else {
                 // Scrolling up
-                navbar.classList.add('isFixed', 'isExpanded');
+                navbar.classList.add('isFixed');
             }
             lastScrollTop = scrollTop;
         }
