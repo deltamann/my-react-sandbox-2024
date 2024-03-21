@@ -1,11 +1,11 @@
 import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import About from './routes/About';
 import Home from './routes/Home';
 import Demo from './routes/Demo';
 import ScrollToTop from './components/common/ScrollToTop';
 import Skills from './routes/Skills';
+import WorkHistory from './routes/WorkHistory';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/skills' element={<Skills />} />
+              <Route path='/work' element={<WorkHistory />} />
               <Route path='/demo' element={<Demo />} />
             </Routes>
             </main>

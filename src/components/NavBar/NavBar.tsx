@@ -41,6 +41,9 @@ const NavBar = () => {
                         <Link to="/skills">Skills</Link>
                     </li>
                     <li>
+                        <Link to="/work">Work History</Link>
+                    </li>
+                    <li>
                         <Link to="/demo">Demo</Link>
                     </li>
                     {/* <li>
