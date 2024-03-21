@@ -44,9 +44,15 @@ const NavBar = () => {
                         <Link to="/work">Work History</Link>
                     </li>
                     <li>
+                        <Link to="/about">About Me</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact</Link>
+                    </li>
+                    {/*<li>
                         <Link to="/demo">Demo</Link>
                     </li>
-                    {/* <li>
+                     <li>
                     <Link to="/list/1">first list</Link>
                     </li> */}
                 </ul>
