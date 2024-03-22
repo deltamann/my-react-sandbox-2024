@@ -1,0 +1,32 @@
+.WorkCard-Wrapper {
+    display: flex;
+}
+
+.WorkCard-Content {
+    flex: 1;
+    padding: 8px 16px;
+    margin: 8px;
+    border: 2px solid #abcdef;
+    border-radius: 16px;
+    font-size: 0.75em;
+    text-align: left;
+}
+
+.WorkCard-Duration {
+    font-style: italic;
+}
+
+.WorkCard-Details li {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* .WorkCard-Wrapper {
+        width: 50%;
+        display: inline-flex;
+    } */
+    .WorkCard-Content {
+        min-height: 375px;
+    }
+}

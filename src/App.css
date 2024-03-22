@@ -1,8 +1,20 @@
+a {
+  color: #11b3db;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
   overflow: hidden;
+  font-family: 'Century gothic', Arial, Helvetica, sans-serif;
 }
+
+.App-Content {
+  max-width: 1080px;
+  margin: auto;
+}
+/*--Obsolete--*/
 
 .App-logo {
   height: 40vmin;

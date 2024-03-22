@@ -1,4 +1,5 @@
 import ContentBlock from "../common/ContentBlock"
+import './WorkCard.css'
 
 export type WorkProp = {
     title: string,
@@ -13,10 +14,19 @@ export type WorkProp = {
 const WorkCard = ({ detail }: { detail: WorkProp }) => {
   return (
     <div className="WorkCard-Wrapper">
-        <div className="WorkCard-content">
+        <div className="WorkCard-Content">
             <h2>{detail.title}</h2>
-            <p className="WorkCard-CompanyName">{detail.company}</p>
-            <p className="WorkCard-Duration">{detail.start} - {detail.finish || 'Present'}</p>
+            <p>
+                <span className="WorkCard-CompanyName">
+                    {
+                        detail.link 
+                            ? <a href={detail.link} rel="noreferrer" target="_blank">{detail.company}</a>
+                            : detail.company
+                    }
+                </span>&nbsp;&nbsp;
+                <span className="WorkCard-Duration">{detail.start} - {detail.finish || 'Present'}</span>
+            </p>
+            <hr />
             <div className="WorkCard-Details">
                 <div className="WorkCard-Roles">
                     <ContentBlock content={{level: 2, title: 'Roles:', list: detail.responsibilities}} />

@@ -1,0 +1,28 @@
+.WorkHistoryList-Wrapper {
+    margin: 0 8px;
+}
+
+.WorkHistoryList-Card{
+    transform: scale(0);
+}
+
+.appear {
+    animation: show-card 0.75s forwards;
+    animation-delay: 0.5ms;
+}
+
+@media only screen and (min-width: 1024px) {
+    .WorkHistoryList-Card {
+        width: 50%;
+        display: inline-flex;
+    }
+}
+
+@keyframes show-card {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

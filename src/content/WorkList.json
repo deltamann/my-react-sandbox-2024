@@ -1,11 +1,11 @@
 {
     "list": [
         {
-            "title": "Software Engineer/Technical Consultant - Associate",
+            "title": "Software Engineer/Technical Consultant",
             "company": "Olympic33",
             "link": "https://www.olympic33.co.nz",
-            "start": "February 2021",
-            "finish": "October 2023",
+            "start": "Feb 2021",
+            "finish": "Oct 2023",
             "responsibilities": [
                 "Software engineer and technical support for the consultant team.",
                 "Utilising Microsoft technologies (Azure, Power platform and .NET Core) to develop solutions for clients and internal business",
@@ -21,8 +21,8 @@
             "title": "Finance Casual",
             "company": "Watercare",
             "link": "https://www.watercare.co.nz/",
-            "start": "August 2020",
-            "finish": "February 2021",
+            "start": "Aug 2020",
+            "finish": "Feb 2021",
             "responsibilities": [
                 "Validate invoices from accounts payable and send invoices into their payment system.",
                 "Setting up template models (using Regex) for their invoice scanning system to pick up values from invoices coming from their business partners."
@@ -36,8 +36,8 @@
             "title": "Software Engineer",
             "company": "Olympic Software Ltd.",
             "link": "https://www.olympic33.co.nz",
-            "start": "September 2015",
-            "finish": "June 2020",
+            "start": "Sep 2015",
+            "finish": "Jun 2020",
             "responsibilities": [
                 "Develop web application solutions for both clients and in-house business.",
                 "Work with teams to design solutions for the web applications.",
@@ -51,8 +51,8 @@
             "title": "Website Developer",
             "company": "Times Media",
             "link": "https://www.times.co.nz/times-media/",
-            "start": "June 2010",
-            "finish": "April 2015",
+            "start": "Jun 2010",
+            "finish": "Apr 2015",
             "responsibilities": [
                 "Develop websites using software tools, including content management systems (CMS) such as Joomla! and Drupal.",
                 "Manage data and the web server in order to keep the websites running.",

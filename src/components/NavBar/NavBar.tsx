@@ -15,10 +15,10 @@ const NavBar = () => {
                 navbar.classList.remove('isFixed');
             } else if (scrollTop > lastScrollTop) {
                 // navbar.classList.remove('isExpanded');
-                navbar.classList.add('isFixed');
+                navbar.classList.add('isFixed','isExpanded');
             } else {
                 // Scrolling up
-                navbar.classList.add('isFixed');
+                navbar.classList.add('isFixed','isExpanded');
             }
             lastScrollTop = scrollTop;
         }
