@@ -88,6 +88,7 @@
         background: #000;
         opacity: 0.5;
         position: absolute;
+        display: block;
     } 
     .MainNavBar-MobileOverlay.hidden {
         opacity: 0;
