@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './NavBar.css'
 import { useEffect } from "react";
 
 const NavBar = () => {
 
+    const navigate = useNavigate();
+    
     useEffect(() => {
         const navbar = document.querySelector(".MainNavBar") as HTMLElement;
+        const navbarMobile = document.querySelector(".MainNavBar-MenuWrapper") as HTMLElement;
+        const overlay = document.querySelector(".MainNavBar-MobileOverlay") as HTMLElement;
 
         let lastScrollTop = 0
         const scrollEffect = () => { 
@@ -22,12 +26,30 @@ const NavBar = () => {
             }
             lastScrollTop = scrollTop;
         }
+
+        navbarMobile.classList.remove("isExpanded");
+        overlay.classList.add("hidden");
+
         window.addEventListener('scroll', scrollEffect);
 
         return () => {
             window.removeEventListener('scroll', scrollEffect);
         }
-    }, [])
+    }, [navigate]);
+
+    const toggleMenu = () => {
+        const navbar = document.querySelector(".MainNavBar-MenuWrapper") as HTMLElement;
+        const overlay = document.querySelector(".MainNavBar-MobileOverlay") as HTMLElement;
+
+        if (navbar.classList.contains("isExpanded")) {
+            navbar.classList.remove("isExpanded");
+            overlay.classList.add("hidden");
+        } else {
+            navbar.classList.add("isExpanded");
+            overlay.classList.remove("hidden");
+        }
+    }
+
     /**/
 
     return (
@@ -57,7 +79,11 @@ const NavBar = () => {
                     </li> */}
                 </ul>
             </div>
-            <button name="menu-toggle" className="MainNavBar-ToggleButton">&#9776;</button>
+            <button 
+                name="menu-toggle"
+                className="MainNavBar-ToggleButton"
+                onClick={toggleMenu}>&#9776;</button>
+            <div className="MainNavBar-MobileOverlay hidden" onClick={toggleMenu}></div>
         </nav>
     )
 };

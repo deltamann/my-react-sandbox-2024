@@ -59,8 +59,35 @@
 @media only screen and ( max-width: 720px ) {
     .MainNavBar-ToggleButton {
         display: block;
+        padding: 8px 12px;
     }
     .MainNavBar-MenuWrapper {
-        max-width: 0;
+        max-width: 100vh;
+        position: fixed;
+        height: 100vh;
+        background-color: #242424;
+        border-right: 1px solid #888;
+        z-index: 100;
+        left: -25vh;
+        transition: left 0.5s ease-in-out;
+    }
+    .MainNavBar-MenuWrapper ul {
+        display: block;
+        max-width: 25vh;
+    }
+    .MainNavBar-MenuWrapper.isExpanded {
+        left: 0;
+    }
+    .MainNavBar-MobileOverlay {
+        width: 100vh;
+        height: 100vh;
+        overflow: hidden;
+        background: #000;
+        opacity: 0.5;
+        position: absolute;
+    } 
+    .MainNavBar-MobileOverlay.hidden {
+        opacity: 0;
+        display: none;
     }
 }
